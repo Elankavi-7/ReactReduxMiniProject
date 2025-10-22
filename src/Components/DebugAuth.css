@@ -1,0 +1,88 @@
+.debug-auth {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #1f2937;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 300px;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.debug-auth h3 {
+  margin: 0 0 0.75rem 0;
+  color: #fbbf24;
+  font-size: 1rem;
+}
+
+.auth-status {
+  margin-bottom: 0.75rem;
+}
+
+.status-authenticated {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.status-anonymous {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.user-info {
+  background: #374151;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.user-info p {
+  margin: 0.25rem 0;
+  font-size: 0.8rem;
+}
+
+.auth-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-actions .btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.auth-actions .btn:hover {
+  opacity: 0.9;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .debug-auth {
+    display: none;
+  }
+}
